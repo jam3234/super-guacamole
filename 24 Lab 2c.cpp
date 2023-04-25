@@ -13,12 +13,12 @@ int main()
 	source.push(2);
 	source.push(1);
 
-	stack <char> intermediate;
+	stack <int> intermediate;
 	stack <int> destination;
 
 	tower(source.size(), source, destination, intermediate);
 
-	cout << source << "\t" << intermediate.size() << "\t" << destination.size();
+	cout << source.size() << "\t" << intermediate.size() << "\t" << destination.size();
 
 	return 0;
 }
